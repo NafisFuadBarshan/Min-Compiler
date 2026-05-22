@@ -1,0 +1,63 @@
+Grammar Rules Matched
+---------------------
+factor -> number
+term -> factor
+expression -> term
+declaration -> int id = expression ;
+statement -> declaration
+statements -> statement
+factor -> number
+term -> factor
+expression -> term
+declaration -> int id = expression ;
+statement -> declaration
+statements -> statements statement
+declaration -> int id ;
+statement -> declaration
+statements -> statements statement
+factor -> id
+term -> factor
+expression -> term
+factor -> id
+term -> factor
+expression -> expression + term
+assignment -> id = expression ;
+statement -> assignment
+statements -> statements statement
+factor -> id
+term -> factor
+expression -> term
+factor -> number
+term -> factor
+expression -> term
+condition -> expression relop expression
+factor -> id
+term -> factor
+expression -> term
+print_stmt -> print ( expression ) ;
+statement -> print_stmt
+statements -> statement
+else_part -> empty
+if_stmt -> if ( condition ) { statements } else_part
+statement -> if_stmt
+statements -> statements statement
+factor -> id
+term -> factor
+expression -> term
+factor -> id
+term -> factor
+expression -> term
+condition -> expression relop expression
+factor -> id
+term -> factor
+expression -> term
+factor -> number
+term -> factor
+expression -> expression + term
+assignment -> id = expression ;
+statement -> assignment
+statements -> statement
+while_stmt -> while ( condition ) { statements }
+statement -> while_stmt
+statements -> statements statement
+program -> statements
