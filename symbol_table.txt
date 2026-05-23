@@ -1,5 +1,0 @@
-Name	Type	Size	Dim	Line	Address
----------------------------------------------
-x	int	4	0	1	1000
-y	int	4	0	2	1004
-z	int	4	0	3	1008
